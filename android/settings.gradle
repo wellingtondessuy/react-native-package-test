@@ -1,0 +1,3 @@
+rootProject.name = 'S2Parking'
+
+include ':app'
