@@ -11,6 +11,7 @@ import {
   Navigator
 } from 'react-native';
 import { Header, Button } from 'native-base';
+import Touchable from '../Components/Touchable';
 
 export default class General extends Component {
 
@@ -55,7 +56,7 @@ export default class General extends Component {
 	_renderRow(rowData) {
 
 		return (
-			<TouchableNativeFeedback onPress={this._goToTickets.bind(this)}>
+			<Touchable onPress={this._goToTickets.bind(this)}>
 				<View style={styles.listItem}>
 					<Image
 						source={require('../../resources/images/black_car.png')}
@@ -66,7 +67,7 @@ export default class General extends Component {
 						{rowData.title}
 					</Text>
 				</View>
-			</TouchableNativeFeedback>
+			</Touchable>
 		);
 
 	}

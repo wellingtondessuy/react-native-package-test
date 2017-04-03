@@ -16,7 +16,7 @@ export default class Tickets extends Component {
 				<Header style={{backgroundColor: '#387EF5'}} androidStatusBarColor="#1565C0">
 					<Left>
 						<Button onPress={() => this.props.navigator.pop()} transparent>
-                            <Icon name='arrow-back'/>
+                            <Icon name='arrow-back' style={{color: 'white'}}/>
                         </Button>
 					</Left>
 					<Body>

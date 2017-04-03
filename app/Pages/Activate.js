@@ -8,6 +8,7 @@ import {
   TouchableNativeFeedback
 } from 'react-native';
 import { Header, Button } from 'native-base';
+import Touchable from '../Components/Touchable';
 
 export default class Activate extends Component {
 
@@ -29,35 +30,23 @@ export default class Activate extends Component {
 				<View style={styles.areasSelect}>
 
 					<Text style={styles.areasLabel}>Área</Text>
-					<Picker
-						style={styles.areasDropdown}
-						selectedValue={this.state.area}
-						onValueChange={(area) => this.setState({area: area})}>
-						<Picker.Item label="Área Azul" value="1" />
-						<Picker.Item label="Área Branca" value="2" />
-					</Picker>
+					<Text style={styles.areasLabel}>Área Azul</Text>
+					
 
 				</View>
 				<View style={styles.timeSelect}>
 
 					<Text style={styles.timeLabel}>Tempo</Text>
-					<Picker
-						style={styles.timeDropdown}
-						selectedValue={this.state.time}
-						onValueChange={(time) => this.setState({time: time})}>
-						<Picker.Item label="60 Minutos - (R$2.50)" value="1" />
-						<Picker.Item label="120 Minutos - (R$5.00)" value="2" />
-						<Picker.Item label="180 Minutos - (R$7.50)" value="3" />
-						<Picker.Item label="240 Minutos - (R$10.00)" value="4" />
-					</Picker>
+					<Text style={styles.timeLabel}>60 Minutos - (R$2.50)</Text>
+					
 
 				</View>
 				<View style={styles.activateButtonView}>
-					<TouchableNativeFeedback>
+					<Touchable>
 						<View style={{width: 200, height: 200, borderRadius: 100, borderWidth: 3, borderColor: 'rgba(0,0,0,0.4)', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2962FF'}}>
 							<Text style={{fontSize: 25, color: 'white'}}>Ativar Ticket</Text>
 						</View>
-					</TouchableNativeFeedback>
+					</Touchable>
 				</View>
 			</View>
 		);
