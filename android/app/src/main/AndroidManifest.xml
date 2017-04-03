@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zonaazul.manaus.s2way"
-    android:versionCode="210050508"
+    package="com.vagaurbana.s2way"
+    android:versionCode="210050509"
     android:versionName="6.0.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
